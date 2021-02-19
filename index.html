@@ -542,14 +542,5 @@
 <script language="javascript" src="./assets/jquery-1.8.2.min.js" type="text/javascript"></script>
 <script language="javascript" src="./assets/calculator_2020.js" type="text/javascript"></script>
 <!-- Form field validation added without submit inline with calculate click in calculator code-->
-<script>
-    window.addEventListener('beforeinstallprompt', (event) => {
-        console.log('👍', 'beforeinstallprompt', event);
-        // Stash the event so it can be triggered later.
-        window.deferredPrompt = event;
-        // Remove the 'hidden' class from the install button container
-        divInstall.classList.toggle('hidden', false);
-    });
-</script>
 </body>
 </html>

@@ -2,6 +2,10 @@
   "short_name": "Transfer & Bond Cost Calculator",
   "name": "Transfer & Bond Cost Calculator",
   "description": "Transfer & Bond Cost Calculator from TNK",
+  "start_url": "/tnk-calc/",
+  "background_color": "#10059f",
+  "display": "fullscreen",
+  "theme_color": "#10059f",
   "icons": [
     {
       "src": "images/icon-96.png",
@@ -23,10 +27,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "start_url": "/",
-  "background_color": "#10059f",
-  "display": "standalone",
-  "scope": "/",
-  "theme_color": "#10059f"
+  ]
 }
