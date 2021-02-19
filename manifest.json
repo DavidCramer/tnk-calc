@@ -5,6 +5,7 @@
   "start_url": "/tnk-calc/",
   "background_color": "#10059f",
   "display": "fullscreen",
+  "scope": "/tnk-calc/",
   "theme_color": "#10059f",
   "icons": [
     {
