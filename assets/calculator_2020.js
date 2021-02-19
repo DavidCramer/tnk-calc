@@ -29,6 +29,17 @@ if ( typeof jQuery == 'undefined' ) {
     $( document ).ready( function() {
         load_div( '#calc-entry-page' );
 
+        $('#show-bond').on('change', function(){
+            if( this.checked ) {
+                $( '#bond-wrapper' ).show();
+                if( ! $( '#bond-value' ).val().length ){
+                    $( '#bond-value' ).val( $( '#prop-value' ).val() )
+                }
+            }else{
+                $( '#bond-wrapper' ).hide();
+            }
+        });
+
         $( '#close-link' ).click( function() {
             $( location ).attr( 'href', 'http://www.tnk.co.za' );
         } );
@@ -84,9 +95,9 @@ if ( typeof jQuery == 'undefined' ) {
 
 
 
-        $( '#prop-value' ).on( 'input change', function( ev ) {
+        $( '#prop-value,#bond-value' ).on( 'input change', function( ev ) {
             var form = document.getElementById( 'form-validation' );
-            if( parseInt(  ev.target.value ) <= 500000 ){
+            if( parseInt(  $( '#prop-value' ).val() ) <= 500000 ){
                 $( '#calc-result-page' ).hide();
                 form.classList.remove( 'was-validated' );
                 return;

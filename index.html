@@ -253,15 +253,25 @@
             <h6>Cost Calculator</h6>
             <hr>
             <form method="post" id="form-validation" class="needs-validation" novalidate="">
-                <div class="row">
-                    <div class="col-6">
+                <div class="form-row">
+                    <div class="form-group col-12">
                         <label for="prop-value">Purchase Price (ZAR)</label>
                         <input type="number" class="form-control" name="prop_val" id="prop-value" placeholder="" min="500001" max="15000000" value="" required="">
                         <div class="invalid-feedback">
                             Required
                         </div>
                     </div>
-                    <div class="col-6">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="show-bond">
+                            <label class="custom-control-label" for="show-bond">Show Bond field</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="bond-wrapper" class="form-row" style="display: none;">
+                    <div class="form-group col-12">
                         <label for="bond-value">Bond Value (ZAR)</label>
                         <input type="number" class="form-control" name="bond_val" id="bond-value" placeholder="" value="">
                         <div class="valid-feedback">
