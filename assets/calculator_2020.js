@@ -126,7 +126,7 @@ if ( typeof jQuery == 'undefined' ) {
                 $( '#calc-messages' ).removeClass( 'alert alert-info alert-warning alert-success alert-dismissible' ).addClass( 'alert alert-warning alert-dismissible' );
                 $( '#calc-messages' ).show();
 
-            } else if ( prop_value >= 15000000 ) {
+            } else if ( prop_value > 15000000 ) {
                 $( '#calc-reset' ).show();
 
                 //alert('The value you entered is over 15 million. Please call
