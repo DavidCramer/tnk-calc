@@ -1,0 +1,15 @@
+body{width:100%;text-align:left;}
+#calc-main-wrapper
+    {
+	width:100%;
+    }
+.blank,.dont-print {display:none;}
+.print-only {display:inline-block;;}
+#logo-print{display:block;position:absolute;top:25px;left:125px;}
+.pre-print{display:inline;font-weight:bold;text-align:left;padding:0;margin:0;font-size:15px;}
+.text-input{margin:0;padding:0;}
+.text-input{padding-left:10px;text-align:left;}
+.entry-field{height:75px;text-align:left;}
+
+#bond-value{margin:0;padding:0;padding-left:10px;font-size:15px;font-weight:normal;}
+#prop-value{margin:0;padding:0;padding-left:10px;font-size:15px;font-weight:normal;}
